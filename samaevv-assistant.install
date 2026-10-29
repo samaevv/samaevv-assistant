@@ -1,0 +1,8 @@
+post_install() {
+  echo "==> Програма встановлена. Тепер виконайте від свого користувача (БЕЗ sudo):"
+  echo "      samaevv-assistant-setup"
+  echo "    Це створить середовище Python, завантажить моделі й запустить Джарвіса."
+}
+post_upgrade() {
+  echo "==> Оновлено. Щоб застосувати зміни, повторіть:  samaevv-assistant-setup"
+}
