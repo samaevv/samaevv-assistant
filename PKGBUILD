@@ -1,6 +1,6 @@
 # Maintainer: samaevv
 pkgname=samaevv-assistant
-pkgver=0.2.0
+pkgver=0.3.0
 pkgrel=1
 pkgdesc="Ukrainian voice assistant «Джарвіс»: local wake word and speech recognition, plugins, browser control centre; Linux (Wayland/X11)"
 arch=('any')
@@ -12,7 +12,7 @@ optdepends=('wl-clipboard: clipboard on Wayland' 'wtype: typing on wlroots Wayla
             'nodejs: for the Claude / Codex command line brains' 'tesseract: text from the screen plugin')
 install=$pkgname.install
 source=("$pkgname-$pkgver.tar.gz::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
-sha256sums=('adb680687b9ce0a2552a91f5fd7558ebe3ef9b4190f9d28297b2bb45ff72858e')
+sha256sums=('85e7f59547bea85bfb3c1c3efe150138aae2d7385481a73110345a063c7ffadb')
 
 package() {
   install -d "$pkgdir/usr/share/$pkgname"
